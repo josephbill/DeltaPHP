@@ -1,15 +1,29 @@
-<?php //opening tag
- //in btw write PHP code
+<?php  //start tag
 
-
- //to print or to output
- echo "Hello world from index.php";
- echo "<br>";
- print "Hello world from Print";
-
-
+// write php code here 
+echo "<h1>Hello world from echo</h1> ";
+echo "<br>";
+echo 4;
+echo "<br>";
+print "Hello world from print";
 
 
 
-//closingtag\
+//closing tag
 ?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+   <?php
+    // write php code
+   echo "hello world from HTML embedd";
+
+   ?>
+
+</body>
+</html>

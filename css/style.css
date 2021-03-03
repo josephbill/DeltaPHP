@@ -1,0 +1,14 @@
+#heading {
+	text-align: center;
+}
+
+hr {
+	margin-right: 26px;
+	margin-left: 26px;
+}
+
+
+#errorPara {
+	color: red;
+	font-style: italic;
+}
