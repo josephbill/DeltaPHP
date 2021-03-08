@@ -14,8 +14,14 @@ if (isset($_POST['save'])) {
     	$patientNameErr = "Patient name is required";
     } else {
     	$patientName = $_POST['patientName'];
+    	    $lengthofString = strlen($patientName);
+          if ($lengthofString > 4) {
+          	# code...
+          	 $patientNameErr = "error charcter count should be 4";
+          }
     	   if (!preg_match("/^[a-zA-Z-' ]*$/",$patientName)) {
           $patientNameErr = "Only letters and white space allowed";
+      
         }
     }
 
@@ -86,7 +92,7 @@ if (isset($_POST['save'])) {
 	 	<form action="form.php" method="post"> 
 	 		<div class="row form-group">
 	 			<div class="col">
-	 				<input type="text" name="patientName" id="patientName" placeholder="Enter Patients Name" class="form-control">
+	 				<input type="text" name="patientName" maxlength="4" id="patientName" placeholder="Enter Patients Name" class="form-control">
 	 				<p id="errorPara"><?php echo $patientNameErr; ?></p>
 
 	 			</div>
